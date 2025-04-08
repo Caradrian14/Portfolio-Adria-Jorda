@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: rgb(23, 192, 8);
+    color: rgb(23, 162, 8);
 }
 
 a {
@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-    color: rgb(23, 192, 8);
+    color: rgb(23, 162, 8);
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
@@ -40,7 +40,7 @@ a:hover {
 }
 
 .color-a {
-    color: rgb(23, 192, 8);
+    color: rgb(23, 162, 8)
 }
 
 .color-d {
@@ -92,7 +92,7 @@ a:hover {
 }
 
 .overlay-mf {
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(0, 0, 0);
 }
 
 .overlay-mf {
@@ -165,7 +165,7 @@ a:hover {
 .line-mf {
     width: 40px;
     height: 5px;
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
     margin: 0 auto;
 }
 
@@ -185,7 +185,7 @@ a:hover {
     content: '';
     position: absolute;
     height: 3px;
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
     width: 100px;
     bottom: -12px;
 }
@@ -225,12 +225,12 @@ a:hover {
     border-radius: 50%;
     line-height: 1.4;
     margin: 0 15px 0 0;
-    box-shadow: 0 0 0 3px rgb(23, 192, 8);
+    box-shadow: 0 0 0 3px rgb(23, 162, 8);
     transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
     color: #fff;
     box-shadow: 0 0 0 3px #cde1f8;
     transition: all 500ms ease;
@@ -256,7 +256,7 @@ a:hover {
 }
 
 .list-ico span {
-    color: rgb(23, 192, 8);
+    color: rgb(23, 162, 8);
     margin-right: 10px;
 }
 
@@ -271,7 +271,7 @@ a:hover {
     line-height: 1.55;
     margin: 0 auto;
     text-align: center;
-    box-shadow: 0 0 0 10px rgb(23, 192, 8);
+    box-shadow: 0 0 0 10px rgb(23, 162, 8);
     display: block;
 }
 
@@ -320,7 +320,7 @@ a:hover {
     position: fixed;
     width: 42px;
     height: 42px;
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
     opacity: .7;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -340,7 +340,7 @@ a:hover {
 .back-to-top {
     position: fixed;
     display: none;
-    background: rgb(23, 192, 8);
+    background: rgb(23, 162, 8);
     color: #fff;
     width: 44px;
     height: 44px;
@@ -379,7 +379,7 @@ a:hover {
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     border: 6px solid #f2f2f2;
-    border-top: 6px solid rgb(23, 192, 8);
+    border-top: 6px solid rgb(23, 162, 8);
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -416,7 +416,7 @@ a:hover {
 
 .navbar-b {
     transition: all .5s ease-in-out;
-    background-color: rgb(84, 214, 57);
+    background-color: rgb(0, 0, 0);
     padding-top: 1.563rem;
     padding-bottom: 1.563rem;
 }
@@ -434,8 +434,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
-    color: rgb(85, 85, 85);
-    text-transform: uppercase;
+    color: rgb(134 134 134);    text-transform: uppercase;
     font-weight: 600;
 }
 
@@ -518,7 +517,7 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
-    background-color: #1B1B1B;
+    background-color: #FFF;
 }
 
 .navbar-b .navbar-brand {
@@ -546,13 +545,13 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
     color: #fff;
     transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
 }
 
 
@@ -639,7 +638,7 @@ a:hover {
 }
 
 .intro .intro-title {
-    color: rgb(23, 192, 8);
+    color: rgb(23, 162, 8);
     font-weight: 600;
     font-size: 3rem;
 }
@@ -718,7 +717,7 @@ a:hover {
 
 .skill-mf .progress .progress-bar {
     height: .7rem;
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
 }
 
 
@@ -736,7 +735,7 @@ a:hover {
 .service-box:hover .ico-circle {
     transition: all 500ms ease;
     color: #fff;
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
     box-shadow: 0 0 0 10px #cde1f8;
 }
 
@@ -825,17 +824,17 @@ a:hover {
 }
 
 .work-content .w-more .w-ctegory {
-    color: rgb(23, 192, 8);
+    color: rgb(23, 162, 8);
 }
 
 .work-content .w-like {
     font-size: 2.5rem;
-    color: rgb(23, 192, 8);
+    color: rgb(23, 162, 8);
     float: right;
 }
 
 .work-content .w-like a {
-    color: rgb(23, 192, 8);
+    color: rgb(23, 162, 8);
 }
 
 .work-content .w-like .num-like {
@@ -879,7 +878,7 @@ a:hover {
 
 .testimonial-box .comit {
     font-size: 2rem;
-    color: rgb(23, 192, 8);
+    color: rgb(23, 162, 8);
     background-color: #fff;
     width: 52px;
     height: 52px;
@@ -913,7 +912,7 @@ a:hover {
     color: #fff;
     padding: 0 15px 5px;
     overflow: hidden;
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
     border-radius: 1rem;
 }
 
@@ -968,7 +967,7 @@ a:hover {
 }
 
 .blog-wrapper .post-meta ul {
-    border-left: 4px solid rgb(23, 192, 8);
+    border-left: 4px solid rgb(23, 162, 8);
     margin-top: 1rem;
 }
 
@@ -978,7 +977,7 @@ a:hover {
 }
 
 .blog-wrapper .post-meta ul a {
-    color: rgb(23, 192, 8);
+    color: rgb(23, 162, 8);
 }
 
 .blog-wrapper .post-meta ul span {
@@ -986,7 +985,7 @@ a:hover {
 }
 
 .blog-wrapper .blockquote {
-    border-left: 4px solid rgb(23, 192, 8);
+    border-left: 4px solid rgb(23, 162, 8);
     padding: 18px;
     font-style: italic;
 }
@@ -1019,7 +1018,7 @@ a:hover {
 }
 
 .box-comments .list-comments a {
-    color: rgb(23, 192, 8);
+    color: rgb(23, 162, 8);
 }
 
 .box-comments .list-comments span {
@@ -1037,7 +1036,7 @@ a:hover {
 .widget-sidebar .sidebar-title {
     font-size: 1.6rem;
     font-weight: 600;
-    border-left: 5px solid rgb(23, 192, 8);
+    border-left: 5px solid rgb(23, 162, 8);
     padding-left: 15px;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
@@ -1054,7 +1053,7 @@ a:hover {
     width: 10px;
     height: 1px;
     left: 0;
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
     top: 20px;
 }
 
@@ -1065,8 +1064,8 @@ a:hover {
 }
 
 .sidebar-search .btn-search {
-    background-color: rgb(23, 192, 8);
-    border-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
+    border-color: rgb(23, 162, 8);
     border-radius: 0;
     padding-left: 20px;
     padding-right: 20px;
@@ -1074,7 +1073,7 @@ a:hover {
 
 .widget-tags ul li {
     display: inline-block;
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
     padding: .2rem .6rem;
     margin-bottom: .5rem;
     border-radius: 15px;
@@ -1131,8 +1130,8 @@ footer .credits a {
 ======================================*/
 
 #sendmessage {
-    color: rgb(23, 192, 8);
-    border: 1px solid rgb(23, 192, 8);
+    color: rgb(23, 162, 8);
+    border: 1px solid rgb(23, 162, 8);
     display: none;
     text-align: center;
     padding: 15px;
@@ -1196,7 +1195,7 @@ footer .credits a {
 }
 
 .button-a {
-    background-color: rgb(23, 192, 8);
+    background-color: rgb(23, 162, 8);
     color: #fff;
     border-color: #cde1f8;
 }
