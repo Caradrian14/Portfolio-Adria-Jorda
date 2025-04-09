@@ -114,8 +114,18 @@
         }
     });
     // Mostrar el pop-up-front al hacer clic en el botón
-    $('.show-skills-btn').on('click', function() {
+    $('.show-skills-btn-front').on('click', function() {
         $('#skills-popup-front-end').show();
+    });
+
+    // Mostrar el pop-up-back al hacer clic en el botón
+    $('.show-skills-btn-back').on('click', function() {
+        $('#skills-popup-back-end').show();
+    });
+
+    // Mostrar el pop-up-other al hacer clic en el botón
+    $('.show-skills-btn-other').on('click', function() {
+        $('#skills-popup-other').show();
     });
 
     // Ocultar el pop-up al hacer clic en el botón de cerrar o fuera del contenido
@@ -124,4 +134,6 @@
             $('#skills-popup').hide();
         }
     });
+
+
 })(jQuery);
