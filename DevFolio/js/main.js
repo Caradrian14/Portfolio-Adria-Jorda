@@ -113,9 +113,9 @@
             }
         }
     });
-    // Mostrar el pop-up al hacer clic en el botón
+    // Mostrar el pop-up-front al hacer clic en el botón
     $('.show-skills-btn').on('click', function() {
-        $('#skills-popup').show();
+        $('#skills-popup-front-end').show();
     });
 
     // Ocultar el pop-up al hacer clic en el botón de cerrar o fuera del contenido
