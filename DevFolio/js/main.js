@@ -113,5 +113,15 @@
             }
         }
     });
+    // Mostrar el pop-up al hacer clic en el botón
+    $('.show-skills-btn').on('click', function() {
+        $('#skills-popup').show();
+    });
 
+    // Ocultar el pop-up al hacer clic en el botón de cerrar o fuera del contenido
+    $('.close-btn, .popup').on('click', function(event) {
+        if (event.target === this || $(event.target).hasClass('close-btn')) {
+            $('#skills-popup').hide();
+        }
+    });
 })(jQuery);
