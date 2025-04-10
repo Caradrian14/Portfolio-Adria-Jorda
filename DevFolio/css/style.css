@@ -1216,6 +1216,13 @@ footer .credits a {
     border-radius: .3rem;
 }
 
+.show-skills-btn-front,
+.show-skills-btn-back,
+.show-skills-btn-other {
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
 /*======================================
 //--//-->   BUTTON
 ======================================*/
