@@ -434,7 +434,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
-    color: rgb(134 134 134);    text-transform: uppercase;
+    color: #fff;    text-transform: uppercase;
     font-weight: 600;
 }
 
@@ -472,18 +472,18 @@ a:hover {
 }
 
 .navbar-b.navbar-trans .nav-link:before {
-    background-color: #fff;
+    background-color: rgb(84, 214, 57);
 }
 
 .navbar-b.navbar-trans .nav-link:hover {
-    color: #fff;
+    color: rgb(84, 214, 57);
 }
 
 .navbar-b.navbar-trans .show>.nav-link,
 .navbar-b.navbar-trans .active>.nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
-    color: #fff;
+    color: rgb(84, 214, 57)
 }
 
 .navbar-b.navbar-reduce {
@@ -494,7 +494,7 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-    color: #afafaf;
+    color: #fff;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
@@ -1291,6 +1291,10 @@ footer .credits a {
 #download-cv-btn:hover {
     background-color: #555;
     transform: scale(1.05);
+}
+
+#skills-popup-back-end {
+    z-index: 2;
 }
 
 @media (min-width: 577px) {
