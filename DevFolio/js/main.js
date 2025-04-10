@@ -144,6 +144,9 @@
             $('#skills-popup-other').hide();
         }
     });
-
+    // Descargar CV en ventana nueva 
+    $('#download-cv-btn').on('click', function() {
+        window.open('cv.pdf', '_blank');
+    });
 
 })(jQuery);
