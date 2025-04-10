@@ -129,9 +129,19 @@
     });
 
     // Ocultar el pop-up al hacer clic en el botón de cerrar o fuera del contenido
-    $('.close-btn, .popup').on('click', function(event) {
+    $('.close-btn-front-end, .popup').on('click', function(event) {
         if (event.target === this || $(event.target).hasClass('close-btn')) {
-            $('#skills-popup').hide();
+            $('#skills-popup-front-end').hide();
+        } 
+    });
+    $('.close-btn-back-end, .popup').on('click', function(event) {
+        if (event.target === this || $(event.target).hasClass('close-btn')) {
+            $('#skills-popup-back-end').hide();
+        }
+    });
+    $('.close-btn-other, .popup').on('click', function(event) {
+        if (event.target === this || $(event.target).hasClass('close-btn')) {
+            $('#skills-popup-other').hide();
         }
     });
 
