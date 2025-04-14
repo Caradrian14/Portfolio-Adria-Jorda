@@ -116,42 +116,50 @@
     // Mostrar el pop-up-front al hacer clic en el botón
     $('.show-skills-btn-languaje').on('click', function() {
         $('#skills-popup-languaje').show();
+        $('body').addClass('no-scroll');
     });
 
     // Mostrar el pop-up-back al hacer clic en el botón
     $('.show-skills-ide').on('click', function() {
         $('#skills-popup-ide').show();
+        $('body').addClass('no-scroll');
     });
 
     // Mostrar el pop-up-other al hacer clic en el botón
     $('.show-skills-btn-frameworks').on('click', function() {
         $('#skills-popup-frameworks').show();
+        $('body').addClass('no-scroll');
     });
 
     // Mostrar el pop-up-other al hacer clic en el botón
     $('.show-skills-btn-other').on('click', function() {
         $('#skills-popup-other').show();
+        $('body').addClass('no-scroll');
     });
 
     // Ocultar el pop-up al hacer clic en el botón de cerrar o fuera del contenido
     $('.close-btn-languaje, .popup').on('click', function(event) {
         if (event.target === this || $(event.target).hasClass('close-btn')) {
             $('#skills-popup-languaje').hide();
+            $('body').removeClass('no-scroll');
         } 
     });
     $('.close-btn-ide, .popup').on('click', function(event) {
         if (event.target === this || $(event.target).hasClass('close-btn')) {
             $('#skills-popup-ide').hide();
+            $('body').removeClass('no-scroll');
         }
     });
     $('.close-btn-frameworks, .popup').on('click', function(event) {
         if (event.target === this || $(event.target).hasClass('close-btn')) {
             $('#skills-popup-frameworks').hide();
+            $('body').removeClass('no-scroll');
         }
     });
     $('.close-btn-other, .popup').on('click', function(event) {
         if (event.target === this || $(event.target).hasClass('close-btn')) {
             $('#skills-popup-other').hide();
+            $('body').removeClass('no-scroll');
         }
     });
     // Descargar CV en ventana nueva 

@@ -1253,6 +1253,7 @@ footer .credits a {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1031;
 }
 
 .popup-content {
@@ -1310,6 +1311,11 @@ footer .credits a {
 
 #skills-popup-back-end {
     z-index: 1;
+}
+
+/* Clase para deshabilitar el desplazamiento del body */
+.no-scroll {
+    overflow: hidden;
 }
 
 @media (min-width: 577px) {
