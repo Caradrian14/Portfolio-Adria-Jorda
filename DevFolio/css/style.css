@@ -1195,7 +1195,7 @@ footer .credits a {
 }
 
 .button-a {
-    background-color: rgb(23, 162, 8);
+    background-color: rgb(83, 100, 81);
     color: #fff;
     border-color: #cde1f8;
 }
@@ -1247,7 +1247,6 @@ footer .credits a {
 .popup {
     display: none;
     position: fixed;
-    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
@@ -1310,7 +1309,7 @@ footer .credits a {
 }
 
 #skills-popup-back-end {
-    z-index: 2;
+    z-index: 1;
 }
 
 @media (min-width: 577px) {

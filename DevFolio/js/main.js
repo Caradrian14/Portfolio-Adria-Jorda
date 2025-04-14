@@ -114,13 +114,18 @@
         }
     });
     // Mostrar el pop-up-front al hacer clic en el botón
-    $('.show-skills-btn-front').on('click', function() {
-        $('#skills-popup-front-end').show();
+    $('.show-skills-btn-languaje').on('click', function() {
+        $('#skills-popup-languaje').show();
     });
 
     // Mostrar el pop-up-back al hacer clic en el botón
-    $('.show-skills-btn-back').on('click', function() {
-        $('#skills-popup-back-end').show();
+    $('.show-skills-ide').on('click', function() {
+        $('#skills-popup-ide').show();
+    });
+
+    // Mostrar el pop-up-other al hacer clic en el botón
+    $('.show-skills-btn-frameworks').on('click', function() {
+        $('#skills-popup-frameworks').show();
     });
 
     // Mostrar el pop-up-other al hacer clic en el botón
@@ -129,14 +134,19 @@
     });
 
     // Ocultar el pop-up al hacer clic en el botón de cerrar o fuera del contenido
-    $('.close-btn-front-end, .popup').on('click', function(event) {
+    $('.close-btn-languaje, .popup').on('click', function(event) {
         if (event.target === this || $(event.target).hasClass('close-btn')) {
-            $('#skills-popup-front-end').hide();
+            $('#skills-popup-languaje').hide();
         } 
     });
-    $('.close-btn-back-end, .popup').on('click', function(event) {
+    $('.close-btn-ide, .popup').on('click', function(event) {
         if (event.target === this || $(event.target).hasClass('close-btn')) {
-            $('#skills-popup-back-end').hide();
+            $('#skills-popup-ide').hide();
+        }
+    });
+    $('.close-btn-frameworks, .popup').on('click', function(event) {
+        if (event.target === this || $(event.target).hasClass('close-btn')) {
+            $('#skills-popup-frameworks').hide();
         }
     });
     $('.close-btn-other, .popup').on('click', function(event) {
