@@ -558,6 +558,7 @@ a:hover {
 /*--/ Hamburger Navbar /--*/
 
 .navbar-toggler {
+    color: white;
     position: relative;
 }
 
