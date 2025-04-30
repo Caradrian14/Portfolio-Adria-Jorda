@@ -167,4 +167,28 @@
     //     window.open('cv.pdf', '_blank');
     // });
 
+    // Traductor
+    function loadTranslations(language) {
+        $.getJSON(`translations/${language}.json`, function(data) {
+          translations[language] = data;
+          updateContent();
+        });
+    }
+    let translations = {};
+    
+    let currentLanguage = 'en';
+    function updateContent() {
+        $('#welcome').text(translations[currentLanguage].welcome);
+        $('#about').text(translations[currentLanguage].about);
+        $('#projects').text(translations[currentLanguage].projects);
+        $('#language-toggle').text(currentLanguage === 'en' ? 'Español' : 'English');
+      }
+    
+      $('#language-toggle').click(function() {
+        currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
+        updateContent();
+      });
+    
+      updateContent();
+
 })(jQuery);
