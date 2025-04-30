@@ -169,7 +169,7 @@
 
     // Traductor
     function loadTranslations(language) {
-        $.getJSON(`translations/${language}.json`, function(data) {
+        $.getJSON(`translation/${language}.json`, function(data) {
           translations[language] = data;
           updateContent();
         });
@@ -178,17 +178,26 @@
     
     let currentLanguage = 'en';
     function updateContent() {
-        $('#welcome').text(translations[currentLanguage].welcome);
-        $('#about').text(translations[currentLanguage].about);
-        $('#projects').text(translations[currentLanguage].projects);
-        $('#language-toggle').text(currentLanguage === 'en' ? 'Español' : 'English');
-      }
+        // Iterar sobre las claves del objeto de traducciones
+        for (const key in translations[currentLanguage]) {
+            if (translations[currentLanguage].hasOwnProperty(key)) {
+                // Asignar el texto al elemento con el ID correspondiente
+                $(`#${key}`).text(translations[currentLanguage][key]);
+            }
+        }
+      // Actualizar el texto del botón de cambio de idioma
+      $('#language-toggle').text(currentLanguage === 'en' ? 'Cambiar a Castelano' : 'Change to English');
+    }
     
-      $('#language-toggle').click(function() {
+    $('#language-toggle').click(function() {
         currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
-        updateContent();
-      });
-    
-      updateContent();
-
+        if (!translations[currentLanguage]) {
+          loadTranslations(currentLanguage);
+        } else {
+          updateContent();
+        }
+    });
+    // Cargar el idioma inicial
+    loadTranslations(currentLanguage);
+    updateContent();
 })(jQuery);
