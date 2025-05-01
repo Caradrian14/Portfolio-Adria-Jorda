@@ -4,5 +4,25 @@
     "navbar-nav-habilidades": "Habilidades",
     "navbar-nav-portfolio": "Portfolio",
     "navbar-nav-contacto": "Contacto",
-    "navbar-nav-cv": "Descargar CV"
+    "navbar-nav-cv": "Descargar CV",
+
+    "main-header": "Programador Desarrollador Web Full Stack",
+    "about-info-name": "Nombre:",
+    "about-info-perfil": "Perfil:",
+    "about-info-email": "Email:",
+  
+    "skill-cursos-titulo": "Cursos en Desarrollo:",
+    "skill-cursos-udemy-web": "Desarrollo Web Completo con CSS3, JS, AJAX, PHP y MySQL",
+    "skill-cursos-udemy-python": "Master en Python: Aprender Python 3, Django, Flask y Tkinter",
+    "skill-cursos-udemy-fp": "FP Superior de Desarrollo de aplicaciones Web",
+    "skill-cursos-udemy-ai-pymes": "Formación Ai Para PYMES de Adira Formación",
+    "skill-cursos-udemy-ai-microsoft": "Microsoft Course: Ai for Beginners",
+    "skill-cursos-udemy-ai-expirience": "3 años de experiencia en el sector del desarrollo software",
+
+    "skill-presentacion-1": "¡Hola! Soy un programador autodidacta que vive y respira tecnología. Siempre estoy al tanto de las novedades y herramientas emergentes para crear soluciones funcionales. Mi curiosidad y mentalidad resolutiva me llevan a enfrentar cualquier desafío con entusiasmo, utilizando nuevas tecnologías para hacer mi trabajo más eficiente y divertido.",
+    "skill-presentacion-2": "Actualmente estoy profundizando en tecnologías de inteligencia artificial y sus fundamentos teóricos para crear soluciones avanzadas y efectivas.",
+    "skill-presentacion-3": "Soy una persona curiosa y siempre estoy investigando, con un espíritu autodidacta en todo lo relacionado con la informática. Me considero pacífico y positivo, ¡siempre listo para aprender y crecer!",
+    "skill-experiencia": "Experiencia Laboral",
+    "skill-experiencia-sollutia": "1 año como Desarrollador Web Full Stack",
+    "skill-experiencia-evolutia": "2 años como Desarrollador Web en escalación, desarrollo y mantenimiento de proyectos software",
   }

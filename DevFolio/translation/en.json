@@ -4,5 +4,14 @@
     "navbar-nav-habilidades": "Skills",
     "navbar-nav-portfolio": "Portfolio",
     "navbar-nav-contacto": "Contact",
-    "navbar-nav-cv": "Download CV"
+    "navbar-nav-cv": "Download CV",
+
+    "main-header": "Full Stack Web Developer Programmer",
+    "about-info-name": "Name:",
+    "about-info-perfil": "Profile:",
+    "about-info-email": "Email:",
+
+    "skill-cursos-titulo": "Training courses:",
+    "skill-cursos-udemy-web": "Complete Web Development with HTML5, CSS3, JS AJAX PHP and MySQL",
+    "skill-cursos-udemy-python": "Master in Python: Learn Python 3, Django, Flask, and Tkinter",
   }
