@@ -1,17 +1,52 @@
 {
-    "navbar-nav-home": "Home",
-    "navbar-nav-about": "About Me",
-    "navbar-nav-habilidades": "Skills",
-    "navbar-nav-portfolio": "Portfolio",
-    "navbar-nav-contacto": "Contact",
-    "navbar-nav-cv": "Download CV",
+  "navbar-nav-home": "Home",
+  "navbar-nav-about": "About Me",
+  "navbar-nav-habilidades": "Skills",
+  "navbar-nav-portfolio": "Portfolio",
+  "navbar-nav-contacto": "Contact",
+  "navbar-nav-cv": "Download CV",
 
-    "main-header": "Full Stack Web Developer Programmer",
-    "about-info-name": "Name:",
-    "about-info-perfil": "Profile:",
-    "about-info-email": "Email:",
+  "main-header": "Full Stack Web Developer Programmer",
+  "about-info-name": "Name:",
+  "about-info-perfil": "Profile:",
+  "about-info-email": "Email:",
+  "about-me": "About Me:",
 
-    "skill-cursos-titulo": "Training courses:",
-    "skill-cursos-udemy-web": "Complete Web Development with HTML5, CSS3, JS AJAX PHP and MySQL",
-    "skill-cursos-udemy-python": "Master in Python: Learn Python 3, Django, Flask, and Tkinter",
-  }
+  "skill-cursos-titulo": "Courses in Development:",
+  "skill-cursos-udemy-web": "Complete Web Development with CSS3, JS, AJAX, PHP and MySQL",
+  "skill-cursos-udemy-python": "Master in Python: Learn Python 3, Django, Flask and Tkinter",
+  "skill-cursos-udemy-fp": "Higher Degree in Web Application Development",
+  "skill-cursos-udemy-ai-pymes": "AI Training for SMEs by Adira Formación",
+  "skill-cursos-udemy-ai-microsoft": "Microsoft Course: AI for Beginners",
+  "skill-cursos-udemy-ai-expirience": "3 years of experience in the software development sector",
+
+  "skill-presentacion-1": "Hello! I am a self-taught programmer who lives and breathes technology. I am always up-to-date with the latest tools and emerging technologies to create functional solutions. My curiosity and problem-solving mindset drive me to tackle any challenge with enthusiasm, using new technologies to make my work more efficient and enjoyable.",
+  "skill-presentacion-2": "I am currently delving into artificial intelligence technologies and their theoretical foundations to create advanced and effective solutions.",
+  "skill-presentacion-3": "I am a curious person and always researching, with a self-taught spirit in everything related to computing. I consider myself peaceful and positive, always ready to learn and grow!",
+  "skill-experiencia": "Work Experience",
+  "skill-experiencia-sollutia": "1 year as a Full Stack Web Developer",
+  "skill-experiencia-evolutia": "2 years as a Web Developer in project scaling, development, and maintenance",
+
+  "skill-title": "Skills",
+  "skill-subtitle": "Computer Knowledge and Other Skills",
+  "skill-lenguajes": "Programming Languages",
+  "skill-otras-habilidades-title": "Other Abilities",
+
+  "skill-ide": "IDE (Integrated Development Environments)",
+  "skill-frameworks": "Frameworks and Libraries",
+  "skill-frameworks-net": ".NET Core (in Training)",
+  "skill-ia-learn": "Theoretical Basis of AI Development (in Training)",
+  "skill-otras-tech": "Other Technologies",
+  "skill-otras-tech-title": "Other Technologies",
+  "skill-otras-tech-linux": "Linux Operating Systems",
+  "skill-otras-tech-vm": "Virtual Machines",
+
+  "books-title": "Books Read",
+  "books-subtitle": "You have to disconnect from screens too!",
+
+  "portfolio-title": "Portfolio",
+  "portfolio-subtitle": "Websites developed during my training.",
+
+  "contacto-title": "Contact",
+  "contacto-subtitle": "You can contact me through the following methods:"
+}
