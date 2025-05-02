@@ -186,7 +186,7 @@
             }
         }
       // Actualizar el texto del botón de cambio de idioma
-      $('#language-toggle').text(currentLanguage === 'en' ? 'Cambiar a Castelano' : 'Change to English');
+      $('#language-toggle').text(currentLanguage === 'en' ? 'Cambiar a Castellano' : 'Change to English');
     }
     
     $('#language-toggle').click(function() {
