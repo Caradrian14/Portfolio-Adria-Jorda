@@ -182,7 +182,7 @@
         for (const key in translations[currentLanguage]) {
             if (translations[currentLanguage].hasOwnProperty(key)) {
                 // Asignar el texto al elemento con el ID correspondiente
-                $(`#${key}`).text(translations[currentLanguage][key]);
+                $(`${key}`).text(translations[currentLanguage][key]);
             }
         }
       // Actualizar el texto del botón de cambio de idioma
