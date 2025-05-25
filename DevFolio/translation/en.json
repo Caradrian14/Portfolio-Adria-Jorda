@@ -9,6 +9,7 @@
   "#main-header": "Full Stack Web Developer Programmer",
   "#about-info-name": "Name:",
   "#about-info-perfil": "Profile:",
+  "#about-info-perfil-span": "Full Stack Web Developer Programmer",
   "#about-info-email": "Email:",
   "#about-me": "About Me:",
   "#years-expirience": "More than 3 years of experience in the software development sector",
@@ -25,8 +26,8 @@
   "#skill-presentacion-2": "I am currently delving into artificial intelligence technologies and their theoretical foundations to create advanced and effective solutions.",
   "#skill-presentacion-3": "I am a curious person and always researching, with a self-taught spirit in everything related to computing. I consider myself peaceful and positive, always ready to learn and grow!",
   "#skill-experiencia": "Work Experience",
-  "#skill-experiencia-sollutia": "1 year as a Full Stack Web Developer",
-  "#skill-experiencia-evolutia": "2 years as a Web Developer in project scaling, development, and maintenance",
+  "#skill-experiencia-sollutia": "1 year as a Junior Web Developer(Javascript, PHP, MySQL, TailWind, CSS3, BEM, Git, XAMP)",
+  "#skill-experiencia-evolutia": "2 years as a Backend Web Developer with PHP and Symfony in project scaling, development, and maintenance (PHP, Symfony, Jquery, Python, Web Scraping, MySQL, SQL Server, Plesk, MicroServices, Continuous Integration, Git, Jira, Trello, Api Rest. Docker, Docker Compose, Linux, LAMP)",
 
   "#skill-title": "Skills",
   "#skill-subtitle": "Computer Knowledge and Other Skills",
