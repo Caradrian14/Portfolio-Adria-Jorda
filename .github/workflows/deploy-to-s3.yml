@@ -31,4 +31,4 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync ./build s3://adria-portfolio --delete
+          aws s3 sync ./ s3://adria-portfolio --delete
