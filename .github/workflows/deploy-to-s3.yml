@@ -35,7 +35,7 @@ jobs:
           aws s3 ls s3://adria-portfolio || echo "ERROR: no se pudo listar el bucket"
         # Intenta listar el bucket. Si fallas aquí, significa credenciales o permisos.
 
-      - name: Deploy to S3 (recommended: s3 sync action)
+      - name: Deploy to S3
         uses: aws-actions/s3-sync@v2
         with:
           # source-dir: cambia según la carpeta generada por tu build: ./build o ./dist
