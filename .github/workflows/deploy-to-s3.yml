@@ -3,33 +3,32 @@ name: Deploy to AWS S3
 on:
   push:
     branches:
-      - main  # o el branch que uses
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node (si tu sitio necesita build)
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Install dependencies
+      - name: Install dependencies and build
         run: |
           npm install
-          npm run build  # si tu proyecto tiene build (React, Vite, etc.)
+          npm run build  # Asegúrate de que este comando genere la carpeta `build` o `dist`
 
-      - name: Deploy to S3
+      - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          args: --delete
-          bucket: adria-porfolio
-          region: eu-north-1
-          source-dir: ./  # o ./build según tu proyecto
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-north-1
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync ./build s3://adria-portfolio --delete
