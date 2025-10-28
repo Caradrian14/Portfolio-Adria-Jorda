@@ -36,7 +36,7 @@ jobs:
         # Intenta listar el bucket. Si fallas aquí, significa credenciales o permisos.
 
       - name: Deploy to S3
-        uses: aws-actions/s3-sync@v2
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           # source-dir: cambia según la carpeta generada por tu build: ./build o ./dist
           source-dir: 'build'
