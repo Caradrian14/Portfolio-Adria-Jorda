@@ -1,25 +1,23 @@
-name: Deploy to AWS S3
+name: Deploy to AWS S3  # Nombre del workflow que aparece en GitHub Actions
 
 on:
   push:
     branches:
-      - main
+      - main            # Ejecutar el workflow cuando hagas push al branch "main"
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Runner que ejecutará el job (Linux)
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        # Clona el repositorio en el runner. Necesario para acceder al código.
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - name: Check build output
-        run: ls -al ./ || ls -al ./
+      - name: Show files at repo root  # Paso de depuración para ver qué se generó
+        run: |
+          echo "Contenido del directorio de trabajo:"
+          ls -la
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -27,9 +25,33 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-north-1
+        # Esta acción configura las variables de entorno AWS_ACCESS_KEY_ID y SECRET
+        # y el perfil para las llamadas AWS CLI posteriores. Asegúrate que la región
+        # coincida con la región de tu bucket S3.
 
-      - name: Test AWS S3 access
-        run: aws s3 ls s3://adria-portfolio
+      - name: Test AWS S3 access (list bucket)
+        run: |
+          echo "Comprobando acceso al bucket S3:"
+          aws s3 ls s3://adria-portfolio || echo "ERROR: no se pudo listar el bucket"
+        # Intenta listar el bucket. Si fallas aquí, significa credenciales o permisos.
 
-      - name: Deploy to S3
-        run: aws s3 sync ./ s3://adria-portfolio --delete
+      - name: Deploy to S3 (recommended: s3 sync action)
+        uses: aws-actions/s3-sync@v2
+        with:
+          # source-dir: cambia según la carpeta generada por tu build: ./build o ./dist
+          source-dir: 'build'
+          bucket: 'adria-portfolio'
+          args: --delete --acl public-read
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        # Explicación:
+        # - aws-actions/s3-sync@v2: action que instala AWS CLI, ejecuta 'aws s3 sync' por ti.
+        # - source-dir: carpeta local que subirás al bucket (ajusta según tu proyecto).
+        # - bucket: nombre exacto del bucket.
+        # - args: '--delete' borra archivos en S3 que ya no están localmente; '--acl public-read'
+        #   hace los objetos públicos (útil para sitios estáticos; revisar política del bucket).
+        # Si prefieres usar el comando aws directamente, reemplaza este bloque por:
+        # run: aws s3 sync ./build s3://adria-portfolio --delete --acl public-read
+
+      # OPCIONAL: invalidar CloudFront si usas CDN (añadir paso aquí)
